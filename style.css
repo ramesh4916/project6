@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    position: relative;
+    
+}
+#top{
+    width: 100%;
+    height: 4vw;
+    background-color: #000;
+    position: absolute;
+    top: 10px;
+    color: #fff;
+    z-index: 999;
+}
+#top h1{
+    font-size: 2vw;
+    font-family: sans-serif;
+    position: absolute;
+    top: .8vw;
+    left: 7vw;
+}
+
+#bottom{
+    width: 100%;
+    height: 4vw;
+    background-color: #fff;
+    position: absolute;
+    bottom: 1vw;
+    z-index: 999;
+}
+#bottom  h2{
+    font-family:cursive;
+    font-size: 1.8vw;
+    position: absolute;
+    left: 10%;
+    top: 10px;
+    font-weight: 500;
+}
+#left{
+    width: 25%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1535223289827-42f1e9919769?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.manage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.manage>span{
+    font-size: 60px;
+    font-weight: 900;
+    font-family: 'Gilroy';
+    color: #fff;
+}
+#left #overlay1{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(255, 166, 0, 0.403);
+}
+#center #overlay2{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(135, 207, 235, 0.314);
+}
+#center2 #overlay3{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(255, 0, 0, 0.3);
+}
+#right #overlay4{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 128, 0, 0.349);
+}
+#center{
+    width: 25%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1581092163144-b7ae3c00adbc?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.design{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.design>span{
+    font-size: 60px;
+    font-weight: 900;
+    font-family: 'Gilroy';
+    color: #fff;
+}
+#center2{
+    width: 25%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?q=80&w=1636&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.build{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.build>span{
+    font-size: 60px;
+    font-weight: 900;
+    font-family: 'Gilroy';
+    color: #fff;
+}
+#right{
+    width: 25%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1625314868143-20e93ce3ff33?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.install{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.install>span{
+    font-size: 60px;
+    font-weight: 900;
+    font-family: 'Gilroy';
+    color: #fff;
+}
+span{
+    color: rgb(125, 65, 9);
+}
+
+@media (max-width:500px){
+    #main{
+        flex-direction: column;
+        height: 400vh;
+    }
+    #top{
+        display: none;
+    }
+    #bottom{
+        display: none;
+    }
+    #left{
+        width: 100%;
+        height: 500vh;
+    }
+    
+    #center{
+        width: 100%;
+        height: 500vh;
+    }
+    #center2{
+        width: 100%;
+        height: 500vh;
+    }
+    #right{
+        width: 100%;
+        height: 500vh;
+    }
+}
